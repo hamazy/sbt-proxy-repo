@@ -37,22 +37,22 @@ Remote Repositories に下記を定義する。
 
 * maven-central
   * https://repo1.maven.org/maven2/
-  * maven-default
+  * maven-2-default
 * ~~javanet-maven1~~ (Not Found)
   * http://download.java.net/maven/1/
   * maven-1-default -> maven-2-default
 * sonatype-public
   * https://oss.sonatype.org/content/repositories/public
-  * maven-default
+  * maven-2-default
 * sonatype-releases
   * https://oss.sonatype.org/content/repositories/releases
-  * maven-default
+  * maven-2-default
 * sonatype-snapshots
   * https://oss.sonatype.org/content/repositories/snapshots
-  * maven-default
+  * maven-2-default
 * typesafe-releases
   * https://repo.typesafe.com/typesafe/releases
-  * maven-default
+  * maven-2-default
 * typesafe-ivy-releases
   * https://repo.typesafe.com/typesafe/ivy-releases/
   * ivy-default
@@ -61,7 +61,7 @@ Remote Repositories に下記を定義する。
   * ivy-default
 * jcenter
   * https://jcenter.bintray.com/
-  * maven-default
+  * maven-2-default
 
 ### 仮想リポジトリの設定
 

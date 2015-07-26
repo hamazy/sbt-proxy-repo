@@ -44,6 +44,9 @@ Remote Repositories に下記を定義する。
 * sonatype-public
   * https://oss.sonatype.org/content/repositories/public
   * maven-default
+* sonatype-releases
+  * https://oss.sonatype.org/content/repositories/releases
+  * maven-default
 * typesafe-releases
   * https://repo.typesafe.com/typesafe/releases
   * maven-default

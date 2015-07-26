@@ -88,7 +88,7 @@ remote-maven-repo には layout が maven のリモートリポジトリを、re
 
 ## SBT の設定
 
-ファイル `~/.sbt/repositories ` を作成し、以下の内容にする。
+ファイル `~/.sbt/repositories` を作成し、以下の内容にする。
 
 ~~~
 [repositories]
@@ -98,3 +98,15 @@ scalakb-maven-proxy-releases: http://localhost:8081/artifactory/remote-maven-rep
 ~~~
 
 リモートからアクセスする場合は localhost:8081 を適宜置き換える。
+
+`~/.sbt/repositories` の場所は、 SBT に以下のようにオプションを渡して、変えることが出来る。
+
+~~~
+$ sbt -Dsbt.repository.config=<path-to-your-repo-file>
+~~~
+
+さらに、SBT の起動時に、以下のようにオプションを渡す。
+
+~~~
+$ sbt -Dsbt.override.build.repos=true
+~~~

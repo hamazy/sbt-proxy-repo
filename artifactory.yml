@@ -1,0 +1,21 @@
+---
+- hosts: all
+
+  tasks:
+    - name: install required packages
+      yum: name={{ item }} state=latest
+      sudo: yes
+      with_items:
+        - java-1.8.0-openjdk
+        - libselinux-python
+
+    - name: download artifactory package
+      get_url: url=http://bit.ly/Hqvfi9 dest=~/
+
+    - name: install artifactory
+      yum: name=/home/{{ ansible_ssh_user }}/artifactory-3.9.2.rpm state=present
+      sudo: yes
+
+    - name: start artifactory
+      service: name=artifactory state=started
+      sudo: yes

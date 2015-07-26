@@ -63,6 +63,9 @@ Remote Repositories に下記を定義する。
   * https://jcenter.bintray.com/
   * maven-2-default
 
+sonatype のリポジトリには、 Suppress POM Consistency Checks にチェックを入れた。
+いくつかの ライブラリーをダウンロードしようとした時、artifactory.log に該当のエラーが出ていたため。
+
 ### 仮想リポジトリの設定
 
 Virtual Repositories に下記を定義する。

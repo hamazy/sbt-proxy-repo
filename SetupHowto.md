@@ -47,6 +47,9 @@ Remote Repositories に下記を定義する。
 * sonatype-releases
   * https://oss.sonatype.org/content/repositories/releases
   * maven-default
+* sonatype-snapshots
+  * https://oss.sonatype.org/content/repositories/snapshots
+  * maven-default
 * typesafe-releases
   * https://repo.typesafe.com/typesafe/releases
   * maven-default
@@ -73,6 +76,8 @@ remote-maven-repo には layout が maven のリモートリポジトリを、re
   * jcenter
   * maven-central
   * sonatype-public
+  * sonatype-releases
+  * sonatype-snapshots
   * typesafe-releases
 * remote-ivy-repo
   * typesafe-ivy-releases
